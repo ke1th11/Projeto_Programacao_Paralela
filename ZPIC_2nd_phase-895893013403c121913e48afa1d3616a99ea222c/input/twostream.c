@@ -16,7 +16,7 @@ void sim_init( t_simulation* sim ){
 	float tmax = 50.0;
 
 	// Simulation box
-	int   nx  = 120;
+	int   nx  = 120;		
 	float box = 4*M_PI;
 
 	// Diagnostic frequency
@@ -26,7 +26,7 @@ void sim_init( t_simulation* sim ){
 	const int n_species = 2;
 
 	// Use 1000 particles per cell
-	int ppc = 500;
+	int ppc = 500;				//valor original = 500
 
 	t_species* species = (t_species *) malloc( n_species * sizeof( t_species ));
 

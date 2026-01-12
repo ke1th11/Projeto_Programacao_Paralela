@@ -24,5 +24,8 @@ $(C_OBJS): $(C_SOURCES) $(HEADERS)
 $(CU_OBJS): $(CU_SOURCES) $(HEADERS)
 	$(CC) -c $(CU_SOURCES) $(NCCFLAGS)
 
+run: $(BIN)
+	sbatch run.sh
+
 clean:
 	rm -f $(BIN) *.o

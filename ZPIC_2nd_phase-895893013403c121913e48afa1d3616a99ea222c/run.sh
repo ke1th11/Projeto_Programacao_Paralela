@@ -5,9 +5,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --time=00:10:00
-#SBATCH --partition=normal-a100-40
+#SBATCH --partition=normal-a100-80
 #SBATCH --account=f202500010hpcvlabuminhog
-
+#SBATCH -x gnx504
 # Carregar módulos
 ml CUDA
 
